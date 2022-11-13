@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="file.css">
+    </head>
+
+    <body>
+    <center>
+    <h1>Image Recognition</h1>
+    <br>
+    <br>
+    <nav>
+        <span onclick="openNav()" class="mobile-nav-open-icon">&#9776</span>
+     </nav>
+     
+     <!-- this would work as the backdrop when navbar is open-->
+     <div class="backdrop-container" id="backdrop"></div>
+     
+     <!--the would be the drawer and it's content-->
+       <div id="mySidenav" class="sidenav-container">
+     
+       <span class="drawer-close-button">
+     <!--icon for closing of the navbar-->
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       </span>
+     <!--Each links on the navbar-->
+       <h2><b>Tablet</b></h2>
+       <br>
+       <br>
+       <h2><b>Book</b></h2>
+       <br>
+       <br>
+       <h2><b>Cap</b></h2>
+       <br>
+       <br>
+       <h2><b>Phone</b></h2>
+     
+     </div>
+        
+        <label>Webcam View</label>
+        <div  id="camera"></div>
+        <br><br>
+        <div id="results"></div>
+         <br>
+         <br>
+        <button onclick="takesnapshot();"><b>Capture Image</b></button>
+        <br><br>
+        <h2>Object :<span id="Object"></span></h2>
+        <h2>Accuracy :<span id="Accuracy"></span></h2>
+
+    </center>
+    </div>
+      <script src="Hello.js"></script>
+    </body>
+    </html>
+  </center>
+    </body>
